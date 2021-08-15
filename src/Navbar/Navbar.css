@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+}
+.navTitle {
+  color: black;
+  font-size: 2.3rem;
+  margin-left: 40%;
+  margin-top: 2rem;
+}
+.NavLinks {
+  margin-top: 11rem;
+  margin-left: -8em;
+}
+#text {
+  text-decoration: line-through;
+  text-decoration-color: #db4a40;
+}
+.leftSide a {
+  font-size: 110%;
+  text-decoration: none;
+  color: grey;
+  line-height: 3.5em;
+}
+.leftSide a:hover {
+  color: #e06b63;
+}
+.cartBtn {
+  width: 140px;
+  height: 55px;
+  background: #db4a40;
+  margin-top: 2.5em;
+  margin-left: -8em;
+  cursor: pointer;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border: 0px solid transparent;
+  font-size: 100%;
+  transition: 400ms;
+}
+.cartBtn:hover {
+  background: #e06b63;
+  transform: scale(1.03);
+}
+.head {
+  opacity: 0;
+}
+.navbar .rightSide button {
+  display: none;
+}
+.menuIcon {
+  display: none;
+}
+.cartIcon {
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .navbar {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 14%;
+    z-index: 100;
+    position: fixed;
+  }
+  .navTitle {
+    display: none;
+  }
+  .head {
+    opacity: 1;
+    font-size: 2.3rem;
+    margin-left: 75%;
+    margin-top: 2rem;
+    display: flex;
+  }
+  .navbar .leftSide {
+    flex: 50%;
+  }
+  .navbar .rightSide {
+    flex: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .menuIcon {
+    margin-top: 5.4%;
+    margin-left: 4%;
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+  }
+  .cartIcon {
+    margin-top: 5.4%;
+    margin-left: 75%;
+    width: 90px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+  .navbar .leftSide .NavLinks {
+    display: none;
+  }
+  .navbar .leftSide #hidden {
+    display: flex;
+    position: absolute;
+    top: -6.5em;
+    left: -70%;
+    height: 500px;
+    width: 300%;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1px;
+  }
+
+  .cartBtn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navTitle {
+    margin-left: 23px;
+  }
+  .NavLinks {
+    margin-left: -110px;
+  }
+  .cartBtn {
+    width: 110px;
+    margin-left: -100%;
+    margin-top: 20px;
+  }
+}
